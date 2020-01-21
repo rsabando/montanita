@@ -288,7 +288,7 @@ input:focus {
   z-index: 9999999;
   top: 0;
   left: 0;
-  background-color: #02BF77;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +388,7 @@ input:focus {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: #02BF77;
+  background-color: #000;
   color: #ffffff;
   text-align: center;
   -webkit-transition-duration: 500ms;
@@ -422,8 +422,8 @@ input:focus {
   padding: 0 40px;
   text-align: center;
   text-transform: capitalize;
-  background-color: #fff;
-  color: #02BF77;
+  background-color: #000;
+  color: #fff;
   border: none;
   border-radius: 2px;
   -webkit-transition-duration: 500ms;
@@ -633,7 +633,7 @@ input:focus {
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
             color: #1cc3b2; } }
       .classy-nav-container .classy-navbar .classynav ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li a:hover {
-        color: #000;
+        color: #373E40;
         font-weight: 500; }
     .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
 /* letra submenu */
@@ -814,7 +814,7 @@ input:focus {
 .footer-area {
   position: relative;
   z-index: 1;
-  background-color: #0e2737; }
+  background-color: #000; }
 
 .single-footer-widget {
   position: relative;
@@ -907,7 +907,10 @@ input:focus {
 
 .copywrite-text {
   position: relative;
+
   z-index: 1; }
+  .copywrite-text p{
+    margin-top: 20px; }
   @media only screen and (max-width: 767px) {
     .copywrite-text {
       margin-bottom: 15px;
@@ -935,8 +938,12 @@ input:focus {
   border-top: 1px solid #273d4b; }
   .copywrite-content .social-info {
     text-align: right; }
+    .copywrite-content {
+      text-align: center;
+    }
     @media only screen and (max-width: 767px) {
       .copywrite-content .social-info {
+        padding-right: 24px;
         text-align: center; } }
     .copywrite-content .social-info a {
       display: inline-block;
@@ -1171,11 +1178,12 @@ input:focus {
 
 /* :: 14.0 Room Area CSS */
 /* slide */
+/* cuadro suite */
 .single-room-slide {
   position: relative;
   z-index: 1;
   height: 700px;
-  background-color: #000;
+  background-color: #fff;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1202,7 +1210,7 @@ input:focus {
         width: 100%;
         height: 200px !important; } }
   .single-room-slide .room-content {
-    background-color: #000;
+    background-color: #fff;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1217,6 +1225,7 @@ input:focus {
         padding-left: 30px; } }
     @media only screen and (max-width: 767px) {
       .single-room-slide .room-content {
+        text-align: center;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -1225,7 +1234,7 @@ input:focus {
         padding-left: 15px;
         margin-bottom: 50px; } }
     .single-room-slide .room-content h2 {
-      color: #ffffff;
+      color: #000;
       font-size: 48px;
       display: block;
       margin-bottom: 15px; }
@@ -1239,7 +1248,7 @@ input:focus {
         .single-room-slide .room-content h2 {
           font-size: 24px; } }
     .single-room-slide .room-content h3 {
-      color: #fff;
+      color: #000;
       font-size: 36px;
       display: block;
       margin-bottom: 25px; }
@@ -1247,7 +1256,7 @@ input:focus {
         .single-room-slide .room-content h3 {
           font-size: 30px; } }
       .single-room-slide .room-content h3 span {
-        color: #ffffff;
+        color: #000;
         font-size: 16px; }
     .single-room-slide .room-content .room-feature {
       position: relative;
@@ -1257,7 +1266,7 @@ input:focus {
         .single-room-slide .room-content .room-feature {
           margin-bottom: 0; } }
       .single-room-slide .room-content .room-feature li {
-        color: #ffffff;
+        color: #000;
         display: block;
         margin-bottom: 15px; }
         .single-room-slide .room-content .room-feature li span {
@@ -1584,6 +1593,12 @@ html .ui-button.ui-state-disabled:active {
       width: 70px;
       margin-right: 30px; }
       @media only screen and (max-width: 767px) {
+
+
+
+        .top-header-content{
+
+        }
         .room-review-area .single-room-review-area .reviwer-thumbnail {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 50px;
@@ -2441,6 +2456,7 @@ html .ui-button.ui-state-disabled:active {
       .single-related-news .post-title {
         font-size: 20px !important; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
+
       .single-related-news .post-title {
         font-size: 20px !important; } }
     @media only screen and (max-width: 767px) {
@@ -2502,6 +2518,7 @@ html .ui-button.ui-state-disabled:active {
         .comment_area .comment-content .comment-meta p {
           font-size: 14px; } }
       @media only screen and (max-width: 767px) {
+
         .comment_area .comment-content .comment-meta p {
           font-size: 14px; } }
     .comment_area .comment-content .comment-meta a.like,
@@ -2522,27 +2539,34 @@ html .ui-button.ui-state-disabled:active {
   .comment_area .children {
     margin-left: 50px; }
     @media only screen and (max-width: 767px) {
+
+
+
       .comment_area .children {
         margin-left: 20px; } }
     .comment_area .children .single_comment_area:last-of-type {
       margin-bottom: 0; }
 
       .inicio{
-        margin-top:20px;
+        padding-top:20px;
         background-image: url("img/home.jpg");
   width: 100%;
   height: 800px;
   text-align: center;
       }
       .inicio h2{
-                margin-top:50px;
-/* color: #fff; */
+
+                margin-top:20px;
       }
 
       .inicio h6{
+        color: #434341;
               margin-top:10px;
         font-size: 30px;
       }
 
-
+.booking{
+  text-align: left;
+  width: 10%;
+}
 /*# sourceMappingURL=style.css.map */
