@@ -2643,28 +2643,30 @@ html .ui-button.ui-state-disabled:active {
               margin-top:10px;
         font-size: 30px;
       }
-
+#igrupo{
+    width: 30%;
+}
 #booking{
-  width: 13%;
-  margin-left : 30px;
+  width: 15%;
+  margin-left : 20px;
   /* margin-left: 30px; */
 }
 #despegar{
-  width: 18%;
-    margin-left: 30px;
-    margin-right: 30px;
-    /* margin-left: 30px; */
+  width: 20%;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    margin-left: 20px;
 
 }
 #expedia{
-  width: 18%;
-    margin-right: 30px;
-    margin-left: : 30px;
-    /* margin-left: 30px; */
+  width: 20%;
+    /* margin-right: 30px;
+    margin-left: : 30px; */
+    margin-left: 20px;
 }
 #airbnb{
-  width: 14%;
-    margin-right: 30px;
+  width: 16%;
+    margin-right: 20px;
     /* margin-left: 30px; */
 }
 .politicas{
