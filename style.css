@@ -674,7 +674,7 @@ input:focus {
       height: 42px;
       line-height: 42px;
       padding: 0 30px;
-      color: #fff; }
+      color: #000; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
         color: #02BF77; }
 
@@ -694,6 +694,9 @@ input:focus {
       .classynav ul li.active a::before {
         display: none; } }
     @media only screen and (max-width: 767px) {
+      .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+  /* letra submenu */
+        color: #fff; }
       .classynav ul li.active a::before {
         display: none; } }
 
