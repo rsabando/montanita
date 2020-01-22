@@ -712,6 +712,11 @@ input:focus {
         line-height: 50px;
         border-radius: 30px; } }
     @media only screen and (max-width: 767px) {
+      /* movil */
+  /* .classy-nav-container{
+      background-color: #000;
+      color:#fff;
+  } */
       .main-header-area .book-now-btn a {
         height: 50px;
         line-height: 50px;

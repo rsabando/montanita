@@ -1220,15 +1220,15 @@ text-align: right;
 		}
 
 		.social img {
-width: 20px;
+width: 25px;
 
 		}
 		.social img:hover {
 
 		}
 
-		.social ul li .icon-facebook {background:#fff;} /* Establecemos los colores de cada red social, aprovechando su class */
-		.social ul li .icon-twitter {background: #fff;}
+		.social ul li .icon-facebook {background-color: rgba(128, 128, 113, 0.3);} /* Establecemos los colores de cada red social, aprovechando su class */
+		.social ul li .icon-twitter {background-color: rgba(128, 128, 113, 0.3);}
 		/* .social ul li .icon-googleplus {background: #d95232;}
 		.social ul li .icon-pinterest {background: #ae181f;}
 		.social ul li .icon-mail {background: #666666;} */
