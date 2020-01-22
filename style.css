@@ -428,7 +428,7 @@ input:focus {
   z-index: 15962536; }
   @media only screen and (max-width: 767px) {
     .video{
-      width: 480px;
+      width: 380px;
     }
     #scrollUp {
       right: 20px;
