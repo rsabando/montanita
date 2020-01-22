@@ -635,7 +635,9 @@ input:focus {
       .classy-nav-container .classy-navbar {
         height: 70px; } }
     @media only screen and (max-width: 767px) {
+
       .classy-nav-container .classy-navbar .nav-brand {
+
         max-width: 90px;
         margin-right: 15px; } }
         /* letra menu */
@@ -658,7 +660,8 @@ input:focus {
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
-          color: #2a303b; }
+          background-color: #000;
+          color: #fff; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
             color: #1cc3b2; } }
       .classy-nav-container .classy-navbar .classynav ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li a:hover {
@@ -671,7 +674,7 @@ input:focus {
       height: 42px;
       line-height: 42px;
       padding: 0 30px;
-      color: #2a303b; }
+      color: #fff; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
         color: #02BF77; }
 
@@ -2674,6 +2677,7 @@ html .ui-button.ui-state-disabled:active {
 .video{
   width:100%;
 max-width:600px;
+autoplay: true;
 }
 
 /*# sourceMappingURL=style.css.map */
