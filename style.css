@@ -366,13 +366,22 @@ input:focus {
     margin-bottom: 0;
     display: block;
     line-height: 1.2; }
+    @media only screen and (min-width: 768px) and (max-width: 1920px) {
+      .wasap{
+        display: none;
+        visibility: hidden;
+      }
+}
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
       .section-heading h2 {
         font-size: 36px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
+
       .section-heading h2 {
         font-size: 30px; } }
     @media only screen and (max-width: 767px) {
+
       .section-heading h2 {
         font-size: 24px; } }
   .section-heading.white h6,
@@ -1594,7 +1603,8 @@ html .ui-button.ui-state-disabled:active {
       margin-right: 30px; }
       @media only screen and (max-width: 767px) {
         .wasap{
-          visibility: visible;
+        /* visibility: visible; */
+
         }
 
 
@@ -2569,8 +2579,6 @@ html .ui-button.ui-state-disabled:active {
   text-align: left;
   width: 10%;
 }
-.wasap{
-visibility: hidden;
-}
+
 
 /*# sourceMappingURL=style.css.map */
