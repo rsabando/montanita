@@ -1227,8 +1227,8 @@ width: 20px;
 
 		}
 
-		.social ul li .icon-facebook {background:#34b7f1;} /* Establecemos los colores de cada red social, aprovechando su class */
-		.social ul li .icon-twitter {background: #128c7e;}
+		.social ul li .icon-facebook {background:#fff;} /* Establecemos los colores de cada red social, aprovechando su class */
+		.social ul li .icon-twitter {background: #fff;}
 		/* .social ul li .icon-googleplus {background: #d95232;}
 		.social ul li .icon-pinterest {background: #ae181f;}
 		.social ul li .icon-mail {background: #666666;} */
@@ -1237,3 +1237,9 @@ width: 20px;
 			background: #fff; /* Cambiamos el fondo cuando el usuario pase el mouse */
 			padding: 10px 30px;
 		}
+		/* #vinetas{
+		list-style: none
+		list-style:circle;
+		color: red;
+
+		} */
