@@ -427,9 +427,7 @@ input:focus {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   z-index: 15962536; }
   @media only screen and (max-width: 767px) {
-    .video{
-      width: 380px;
-    }
+/* video */
     #scrollUp {
       right: 20px;
       bottom: 20px; } }
@@ -2672,8 +2670,9 @@ html .ui-button.ui-state-disabled:active {
     margin-right: 20px;
     /* margin-left: 30px; */
 }
-.politicas{
-  /* padding-left: 90px; */
+.video{
+  width:100%;
+max-width:600px;
 }
 
 /*# sourceMappingURL=style.css.map */
