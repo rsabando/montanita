@@ -1544,6 +1544,7 @@ html .ui-button.ui-state-disabled:active {
   top: -7px; }
 
 .room-thumbnail-slides {
+
   position: relative;
   z-index: 1; }
   .room-thumbnail-slides .carousel-indicators {
@@ -1726,6 +1727,9 @@ html .ui-button.ui-state-disabled:active {
             font-size: 12px; } }
 
 /* :: 15.0 About CSS */
+#titulo-video{
+  font-family: CreativZooSerif;
+}
 .about-content {
   position: relative;
   text-align: justify;
@@ -2230,6 +2234,10 @@ html .ui-button.ui-state-disabled:active {
         .breadcrumb-area .room-price span {
           font-size: 12px; } }
 
+.idioma-page h4{
+  text-align: center;
+  margin:40px;
+}
 .breadcrumb-content {
   position: relative;
   z-index: 1; }
@@ -2589,7 +2597,7 @@ html .ui-button.ui-state-disabled:active {
       .comment_area .comment-content .comment-author img {
         border-radius: 50%; }
     .comment_area .comment-content .comment-meta .post-date {
-      color: #1cc3b2;
+      color: #717780;
       font-size: 12px;
       text-transform: uppercase;
       display: block;
@@ -2781,7 +2789,32 @@ display: initial
 .gallery-cell:before {
 /* height: 500px; */
 }
+.idiomas{
+  background-color: #000;
+  height: 800px;
+}
+.idiomas-select{
 
+  font-size: 30px;
+  text-align: center;
+}
+.idiomas-select h6{
+  padding-top: 80px;
+  color: #fff;
+}
+
+.idiomas-select img{
+/* text-align: center; */
+width: 60px;
+
+}.idioma-img{
+    text-align: center;
+
+}
+}.idioma-img img{
+  width: 500px;
+
+}
 /* Slider */
 
 /*# sourceMappingURL=style.css.map */

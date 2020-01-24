@@ -1155,6 +1155,13 @@ you can use the generic selector below, but it's slower:
  font-family: 'Atlane';
  src: url('../fonts/Atlane OTF.otf');
 }
+
+@font-face
+{
+ font-family: 'CreativZooSerif';
+ src: url('../fonts/CreativZooSerif.ttf');
+}
+
 	.glyph {
 		float: left;
 		text-align: center;
