@@ -1719,6 +1719,9 @@ html .ui-button.ui-state-disabled:active {
           #l-reserva{
             font-size: 12px;
           }
+          #titulo-video{
+            font-size: 20px;
+          }
           .room-review-area .single-room-review-area .reviwer-content .reviwer-rating i {
             font-size: 12px; } }
 
