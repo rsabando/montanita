@@ -11,7 +11,7 @@
     <title>Montañita View</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
+    <link rel="icon" href="../img/core-img/favicon.png">
     <!-- video -->
     <!-- <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" />
@@ -278,7 +278,7 @@
                   <div class="col-12 col-lg-8">
                   <!-- Comments Area -->
                       <div class="comment_area mb-50 clearfix">
-                          <h2>12 comments</h2>
+                          <h2>1 comment</h2>
 
                           <ol id="comentarios">
                               <!-- Single Comment Area -->
@@ -583,11 +583,20 @@ All Rights Reserved grupo3i.com &copy;<script>document.write(new Date().getFullY
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
     <!-- Random comentarios -->
-        <script>
-        var ol = document.getElementById('comentarios');
-        for (var i = ol.children.length; i >= 0; i--) {
-        ol.appendChild(ol.children[Math.random() * i | 0]);}
-        </script>
+    <script>
+    // var ol = document.getElementById('comentarios');
+    var ol = document.getElementById('comentarios');
+    var li = document.getElementById('comentarios').children;
+    var c;
+    c = Math.random() * 12 | 1;
+    // console.log(c);
+    for ( i =0; i < li.length; i++) {
+    if (i==c){
+      ol.appendChild(ol.children[Math.random() * c | 0]);
+    }
+      li[i].style.display='none';
+    }
+    </script>
     <script src="../js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="../js/popper.min.js"></script>

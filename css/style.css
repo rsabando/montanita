@@ -1162,6 +1162,12 @@ you can use the generic selector below, but it's slower:
  src: url('../fonts/CreativZooSerif.ttf');
 }
 
+@font-face
+{
+ font-family: 'Impact1';
+ src: url('../fonts/impact.ttf');
+}
+
 	.glyph {
 		float: left;
 		text-align: center;

@@ -1011,6 +1011,7 @@ text-align: center;
     }
 
     .copywrite-content .social-info h6 {
+      font-family: Impact1;
       color: #fff;
     }
       .copywrite-content .social-info a:focus, .copywrite-content .social-info a:hover {
