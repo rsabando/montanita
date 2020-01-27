@@ -59,13 +59,7 @@
 
                     <div class="col-6">
                         <div class="top-header-content">
-                            <!-- Top Social Area -->
-                            <!-- <div class="top-social-area ml-auto">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </div> -->
+
                         </div>
                     </div>
 
@@ -136,32 +130,70 @@
   <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
       <h2 id="b-letra">Bem-vindo à vista Montañita</h2>
             <h6 id="l-reserva">Reserve Agora</h6>
-
-            <div class="gallery js-flickity"
-              data-flickity-options='{ "wrapAround": true }'>
-              <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
-              <div class="gallery-cell"><img src="../img/banner/reserva2.png" alt></div>
-              <div class="gallery-cell"><img src="../img/banner/reserva3.png" alt></div>
-            </div>
             <div class="hotel-search-form-area">
-                <div>
+
+              <div class="gallery js-flickity"
+                data-flickity-options='{ "autoplay": true }'>
+                <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva2.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva3.png" alt></div>
+              </div>
+
                     <div class="hotel-search-form">
                         <form action="#" method="post">
-                            <div class="row justify-content-between align-items-end">
+                            <div class="row justify-content-center">
+                              <div class="col-6 col-md-2 col-lg-3">
+                                  <label for="checkIn">Entrada</label>
+                                  <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-3">
+                                  <label for="checkIn">Salida</label>
+                                  <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                              </div>
+                              <div class="col-4 col-md-1">
+                                  <label for="room">Cuartos</label>
+                                  <select name="room" id="room" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
+                              <div class="col-4 col-md-1">
+                                  <label for="adults">Adultos</label>
+                                  <select name="adults" id="adults" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
+                              <div class="col-4 col-md-2 col-lg-1">
+                                  <label for="children">Niños</label>
+                                  <select name="children" id="children" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
 
-                              <div class="col-3">
-                              </div>
-                              <div class="col-4">
+                                <div class="btn-reservar">
                                   <button type="submit" class="form-control btn roberto-btn w-100">Reservar</button>
-                              </div>
-                              <div class="col-3">
-                              </div>
+                                </div>
                             </div>
                         </form>
                     </div>
 
-                </div>
             </div>
+
+
             <div class="bannerhotel">
                 <img src="../img/home.png" alt="">
             </div>

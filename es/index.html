@@ -142,16 +142,6 @@
 
             <div class="hotel-search-form-area">
 
-              <!-- <div class="carousel">
-                <a href="#one!">    <img src="../img/banner/reserva1.png" alt=""></a>
-                <a href="#two!">    <img src="../img/banner/reserva2.png" alt=""></a>
-                <a href="#three!">    <img src="../img/banner/reserva1.png" alt=""></a>
-                <a href="#four!">    <img src="../img/banner/reserva1.png" alt=""></a>
-                  <a href="#four!">    <img src="../img/banner/reserva1.png" alt=""></a>
-
-
-              </div> -->
-
               <div class="gallery js-flickity"
                 data-flickity-options='{ "autoplay": true }'>
                 <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
@@ -162,7 +152,47 @@
                     <div class="hotel-search-form">
                         <form action="#" method="post">
                             <div class="row justify-content-center">
-
+                              <div class="col-6 col-md-2 col-lg-3">
+                                  <label for="checkIn">Entrada</label>
+                                  <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-3">
+                                  <label for="checkIn">Salida</label>
+                                  <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                              </div>
+                              <div class="col-4 col-md-1">
+                                  <label for="room">Cuartos</label>
+                                  <select name="room" id="room" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
+                              <div class="col-4 col-md-1">
+                                  <label for="adults">Adultos</label>
+                                  <select name="adults" id="adults" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
+                              <div class="col-4 col-md-2 col-lg-1">
+                                  <label for="children">Niños</label>
+                                  <select name="children" id="children" class="form-control">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                  </select>
+                              </div>
 
                                 <div class="btn-reservar">
                                   <button type="submit" class="form-control btn roberto-btn w-100">Reservar</button>
@@ -213,13 +243,10 @@
 
     <section class="roberto-rooms-area">
         <div class="rooms-slides owl-carousel">
-            <!-- Single Room Slide -->
             <div class="single-room-slide d-flex align-items-center">
-                <!-- Thumbnail -->
                 <div class="room-thumbnail h-100 bg-img" style="background-image: url(../img/bg-img/18.jpg);"></div>
-                <!-- Content -->
                 <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Suit A</h2>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Bus Aventura</h2>
                     <h3 data-animation="fadeInUp" data-delay="300ms">400$ <span>/ Dia</span></h3>
                     <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
                         <li><span><i class="fa fa-check"></i> Tamaño</span> <span>: 20mt </span></li>
@@ -230,13 +257,10 @@
                 </div>
             </div>
 
-            <!-- Single Room Slide -->
-            <div class="single-room-slide d-flex align-items-center">
-                <!-- Thumbnail -->
+            <!-- <div class="single-room-slide d-flex align-items-center">
                 <div class="room-thumbnail h-100 bg-img" style="background-image: url(../img/bg-img/17.jpg);"></div>
-                <!-- Content -->
                 <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Suit B</h2>
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Bus Gran Vista</h2>
                     <h3 data-animation="fadeInUp" data-delay="300ms">325$ <span>/ Dia</span></h3>
                     <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
                         <li><span><i class="fa fa-check"></i> Tamaño</span> <span>: 20 mt</span></li>
@@ -245,7 +269,35 @@
                         <li><span><i class="fa fa-check"></i> Servicios</span> <span>: Wifi, Television, Bathroom</span></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
+
+            <!-- <div class="single-room-slide d-flex align-items-center">
+                <div class="room-thumbnail h-100 bg-img" style="background-image: url(../img/bg-img/18.jpg);"></div>
+                <div class="room-content">
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Bus Premium</h2>
+                    <h3 data-animation="fadeInUp" data-delay="300ms">400$ <span>/ Dia</span></h3>
+                    <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
+                        <li><span><i class="fa fa-check"></i> Tamaño</span> <span>: 20mt </span></li>
+                        <li><span><i class="fa fa-check"></i> Capacidad</span> <span>: 2 Personas</span></li>
+                        <li><span><i class="fa fa-check"></i> Cama</span> <span>: King Beds</span></li>
+                        <li><span><i class="fa fa-check"></i> Servicios</span> <span>: Wifi, Television, Baño, Cable</span></li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <!-- <div class="single-room-slide d-flex align-items-center">
+                <div class="room-thumbnail h-100 bg-img" style="background-image: url(../img/bg-img/18.jpg);"></div>
+                <div class="room-content">
+                    <h2 data-animation="fadeInUp" data-delay="100ms">Habitacion Bus de la Selva</h2>
+                    <h3 data-animation="fadeInUp" data-delay="300ms">400$ <span>/ Dia</span></h3>
+                    <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
+                        <li><span><i class="fa fa-check"></i> Tamaño</span> <span>: 20mt </span></li>
+                        <li><span><i class="fa fa-check"></i> Capacidad</span> <span>: 2 Personas</span></li>
+                        <li><span><i class="fa fa-check"></i> Cama</span> <span>: King Beds</span></li>
+                        <li><span><i class="fa fa-check"></i> Servicios</span> <span>: Wifi, Television, Baño, Cable</span></li>
+                    </ul>
+                </div>
+            </div> -->
         </div>
     </section>
     <!-- Our Room Area End -->

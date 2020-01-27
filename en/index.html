@@ -120,20 +120,24 @@
   <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
       <h2 id="b-letra">Welcome to Montañita View</h2>
             <h6 id="l-reserva">Book now</h6>
-
-            <div class="gallery js-flickity"
-              data-flickity-options='{ "wrapAround": true }'>
-              <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
-              <div class="gallery-cell"><img src="../img/banner/reserva2.png" alt></div>
-              <div class="gallery-cell"><img src="../img/banner/reserva3.png" alt></div>
-            </div>
             <div class="hotel-search-form-area">
-                <div>
+
+              <div class="gallery js-flickity"
+                data-flickity-options='{ "autoplay": true }'>
+                <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva2.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva3.png" alt></div>
+              </div>
+
                     <div class="hotel-search-form">
                         <form action="#" method="post">
-                            <div class="row justify-content-between align-items-end">
-                              <!-- <div class="col-6 col-md-2 col-lg-3">
+                            <div class="row justify-content-center">
+                              <div class="col-6 col-md-2 col-lg-3">
                                   <label for="checkIn">Entrada</label>
+                                  <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                              </div>
+                              <div class="col-6 col-md-2 col-lg-3">
+                                  <label for="checkIn">Salida</label>
                                   <input type="date" class="form-control" id="checkIn" name="checkin-date">
                               </div>
                               <div class="col-4 col-md-1">
@@ -168,20 +172,18 @@
                                       <option value="05">05</option>
                                       <option value="06">06</option>
                                   </select>
-                              </div> -->
-                              <div class="col-3">
                               </div>
-                              <div class="col-4">
-                                  <button type="submit" class="form-control btn roberto-btn w-100">Book now</button>
-                              </div>
-                              <div class="col-3">
-                              </div>
+
+                                <div class="btn-reservar">
+                                  <button type="submit" class="form-control btn roberto-btn w-100">Book</button>
+                                </div>
                             </div>
                         </form>
                     </div>
 
-                </div>
             </div>
+
+
             <div class="bannerhotel">
                 <img src="../img/home.png" alt="">
             </div>
