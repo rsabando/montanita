@@ -442,11 +442,14 @@ input:focus {
 /* :: 6.0 Buttons Area CSS */
 .btn:focus {
   box-shadow: none; }
-
+.btn-reservar{
+text-align: center;
+  /* background-color: red; */
+}
 .roberto-btn {
   position: relative;
   z-index: 1;
-  min-width: 150px;
+
   height: 46px;
   line-height: 46px;
   font-size: 16px;
@@ -466,8 +469,8 @@ input:focus {
     font-weight: 500;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-    background-color: #ffffff;
-    color: #1cc3b2; }
+    background-color: #00A2CF;
+    color: #fff; }
   .roberto-btn.btn-2 {
     min-width: 180px;
     height: 50px;
@@ -987,7 +990,9 @@ input:focus {
   padding: 15px 0;
   border-top: 1px solid #273d4b; }
   .copywrite-content .social-info {
-    text-align: right; }
+    /* background-color: red; */
+    text-align: right;
+  }
     .copywrite-content {
       text-align: center;
     }
@@ -996,12 +1001,18 @@ input:focus {
      }
     @media only screen and (max-width: 767px) {
       .copywrite-content .social-info {
-        padding-right: 24px;
+        padding-top:20px;
+        /* padding-right: 24px; */
         text-align: center; } }
     .copywrite-content .social-info a {
       display: inline-block;
       color: #afb4bf;
-      padding-left: 20px; }
+      padding: 10px;
+    }
+
+    .copywrite-content .social-info h6 {
+      color: #fff;
+    }
       .copywrite-content .social-info a:focus, .copywrite-content .social-info a:hover {
         color: #ffffff; }
 
@@ -1935,7 +1946,10 @@ html .ui-button.ui-state-disabled:active {
   position: relative;
   z-index: 1;
   padding-top: 150px;
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+margin-bottom: 50px;
+
+}
   .roberto--video--area .video-content-area {
     /* width: 500px; */
     position: relative;
@@ -2791,10 +2805,9 @@ display: initial
 }
 .idiomas{
   background-color: #000;
-  height: 800px;
+  height: 700px;
 }
 .idiomas-select{
-
   font-size: 30px;
   text-align: center;
 }

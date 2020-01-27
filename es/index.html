@@ -12,38 +12,16 @@
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
-    <!-- video -->
-    <!-- Video.js base CSS -->
-    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
 
-    <!-- City -->
-    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
-
-    <!-- Fantasy -->
-    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
-
-    <!-- Forest -->
-    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
-
-    <!-- Sea -->
-    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
-
-    <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" />
-
-     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-     <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
-
-
-
-     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <!-- <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" />
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
@@ -126,15 +104,12 @@
                                       <ul class="dropdown">
                                           <li><a href="./hotelbob.html">- Hotel Bob Esponja</a></li>
                                           <li><a href="./complejohotel.html">- Complejo Hotelero</a></li>
+                                          <li><a href="./buseco.html">- Bus Ecológico</a></li>
+                                          <li><a href="./gampling.html">- Gampling</a></li>
                                       </ul>
                                     </li>
-                                    <li><a href="./buseco.html">Bus Ecológico</a></li>
-
-                                    <li><a href="./gampling.html">Gampling</a>
-                                    </li>
-                                    <li><a href="./apartamentos.html">Apartamentos</a>
-                                            <li><a href="#">Lotes</a>
-                                    </li>
+                                    <li><a href="./apartamentos.html">Apartamentos</a></li>
+                                    <li><a href="#">Lotes</a></li>
                                     <!-- <li><a href="#">Contacto</a></li> -->
                                 </ul>
                             </div>
@@ -151,8 +126,8 @@
     <section class="inicio">
       <div class="social">
 		<ul>
-			<li ><a href="https://m.me/ron.sab.121" target="_blank" class="icon-facebook"><img src="../icon/messenger.svg" /></a></li>
-      <li class="wasap"><a href="https://api.whatsapp.com/send?phone=5930979754542&text=Hola!%20Quiero%20una%20Reserva!" target="_blank" class="icon-twitter"><img src="../icon/wasap.svg" /></a></li>
+			<li ><a href="https://m.me/ron.sab.121" target="_blank" class="icon-facebook"><img alt="messenger icono" src="../icon/messenger.svg" /></a></li>
+      <li class="wasap"><a href="https://api.whatsapp.com/send?phone=5930979754542&text=Hola!%20Quiero%20una%20Reserva!" target="_blank" class="icon-twitter"><img  alt="wasap icono" src="../icon/wasap.svg" /></a></li>
     </ul>
 	</div>
 
@@ -170,8 +145,8 @@
                 <div>
                     <div class="hotel-search-form">
                         <form action="#" method="post">
-                            <div class="row justify-content-between align-items-end">
-                                <div class="col-6 col-md-2 col-lg-3">
+                            <div class="row justify-content-center">
+                                <!-- <div class="col-6 col-md-2 col-lg-3">
                                     <label for="checkIn">Entrada</label>
                                     <input type="date" class="form-control" id="checkIn" name="checkin-date">
                                 </div>
@@ -207,10 +182,15 @@
                                         <option value="05">05</option>
                                         <option value="06">06</option>
                                     </select>
+                                </div> -->
+
+                                <div class=" btn-reservar">
+                                  <button type="submit" class="form-control btn roberto-btn w-100">Reservar</button>
+
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <button type="submit" class="form-control btn roberto-btn w-100">Buscar</button>
-                                </div>
+
+
+
                             </div>
                         </form>
                     </div>
@@ -315,7 +295,7 @@
                       <div class="comment_area mb-50 clearfix">
                           <h2>12 Comentarios</h2>
 
-                          <ol>
+                          <ol id="comentarios">
                               <!-- Single Comment Area -->
                               <li class="single_comment_area">
                                   <!-- Comment Content -->
@@ -400,7 +380,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">4 Ene 2020</a>
                                           <h5>Ceci Leon</h5>
                                           <p>Maravilloso Hotel y excelente servicio.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -436,7 +416,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">4 Ene 2020</a>
                                           <h5>Leti Alvarez</h5>
                                           <p>Sin duda vovere, el mejor hotel de Ecuador!!.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -454,7 +434,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">2 Ene 2020</a>
                                           <h5>Juan Alvarado</h5>
                                           <p>Gran Hotel con una hermosa vistar!!.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -472,7 +452,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">7 Ene 2020</a>
                                           <h5>Hector Paz</h5>
                                           <p>Excelente desayuno y muy variado.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -490,7 +470,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">6 Ene 2020</a>
                                           <h5>Maria Castro</h5>
                                           <p>Excelente desayuno y muy variado.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -508,9 +488,9 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">11 Ene 2020</a>
                                           <h5>Luis Campos</h5>
-                                          <p>Gracias por unas excelentes vacaciones.</p>
+                                          <p>Increible Hotel.</p>
                                           <!-- <a href="#" class="like">Like</a>
                                           <a href="#" class="reply">Reply</a> -->
                                       </div>
@@ -526,7 +506,7 @@
                                       </div>
                                       <!-- Comment Meta -->
                                       <div class="comment-meta">
-                                          <a href="#" class="post-date">10 Ene 2020</a>
+                                          <a href="#" class="post-date">1 Ene 2020</a>
                                           <h5>Walter Ruiz</h5>
                                           <p>Sin duda volveré, el mejor hotel de Ecuador.</p>
                                           <!-- <a href="#" class="like">Like</a>
@@ -572,7 +552,7 @@
                       <a target="_blank" href="https://es.airbnb.com/"><i aria-hidden="true"><img id="airbnb" src="../img/logos/airbnb.png" alt=""></i></a>
 
                     <!-- </div> -->
-                      </br>
+                    <!-- <br> -->
                       <!-- <div class="booking">
 
                       </div> -->
@@ -592,16 +572,20 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
                         <!-- Social Info -->
 
 <div class="politicas">
-  <a  target="_blank"href="politicas.html">Políticas y Privacidad</a>
+  <a  target="_blank" href="politicas.html">Políticas y Privacidad</a>
 
 </div>
                         <div class="social-info">
+                          <div class="col-12">
+                            <h6>Síguenos en:</h6>
+                            </div>
 
-                            <a target="_blank" href="https://www.facebook.com/montanitaview.ec/?ref=br_rs"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
-                            <a target="_blank" href="https://www.instagram.com/montanitaview.ec/?hl=es-la"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/company/grupo-3i/about/?viewAsMember=true"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5493516342592&text=Hola!%20Quiero%20generar%20mas%20ventas!"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <div class="col-12 ">
+                              <a target="_blank" href="https://www.facebook.com/montanitaview.ec/?ref=br_rs"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a target="_blank" href="https://www.instagram.com/montanitaview.ec/?hl=es-la"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              <a target="_blank" href="https://www.linkedin.com/company/grupo-3i/about/?viewAsMember=true"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                            </div>
 
                         </div>
                     </div>
@@ -613,6 +597,12 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
 
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
+<!-- Random comentarios -->
+<script>
+var ol = document.getElementById('comentarios');
+for (var i = ol.children.length; i >= 0; i--) {
+ol.appendChild(ol.children[Math.random() * i | 0]);}
+</script>
 
     <script src="../js/jquery.min.js"></script>
     <!-- Popper -->
@@ -623,6 +613,7 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
     <script src="../js/roberto.bundle.js"></script>
     <!-- Active -->
     <script src="../js/default-assets/active.js"></script>
+
 
 </body>
 
