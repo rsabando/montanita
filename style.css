@@ -372,8 +372,8 @@ input:focus {
     line-height: 1.2; }
     @media only screen and (min-width: 768px) and (max-width: 1920px) {
       .wasap{
-        /* display: none;
-        visibility: hidden; */
+        display: none;
+        visibility: hidden;
       }
       /* #booking{
         width: 6%;
@@ -1733,7 +1733,8 @@ html .ui-button.ui-state-disabled:active {
             font-size: 12px;
           }
           #titulo-video{
-            font-size: 20px;
+            text-align: center;
+            font-size: 23px;
           }
           .room-review-area .single-room-review-area .reviwer-content .reviwer-rating i {
             font-size: 12px; } }
@@ -2797,7 +2798,7 @@ display: initial
 
 .gallery {
   background: #fff;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .gallery-cell {
