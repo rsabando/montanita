@@ -2790,6 +2790,7 @@ display: initial
 
 .gallery {
   background: #EEE;
+  margin-bottom: 10px;
 }
 
 .gallery-cell {
