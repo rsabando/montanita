@@ -2815,6 +2815,10 @@ display: initial
   background: #fff;
   /* margin-bottom: 10px; */
 }
+.gallery3 {
+  text-align: center;
+  /* margin-bottom: 10px; */
+}
 
 .gallery-cell {
   /* padding-right: 100px; */
@@ -2831,7 +2835,7 @@ display: initial
 }
 .idiomas{
   background-color: #000;
-  height: 700px;
+ height: 100vh;
 }
 .idiomas-select{
   font-size: 30px;
@@ -2897,6 +2901,8 @@ display: none;
 
 
 #popup {
+  /* animation-name: fadein;
+animation-duration: 0.1s; */
   border-radius: 5px;
   margin: 20px;
   padding: 10px;
@@ -2906,7 +2912,8 @@ display: none;
   display:none;
   position:fixed;
   top:30%;
-  right: 30%;
+  /* right: 30%; */
+  right: 32%;
   z-index:9999;
 }
 #popup p{
@@ -2924,7 +2931,8 @@ display: none;
   display:none;
   position:fixed;
   top:30%;
-  left: 20%;
+  /* left: 20%; */
+  left: 27%;
   z-index:9999;
 }
 #popup2 p{
@@ -2950,3 +2958,36 @@ display: none;
   font-size: 10px;
   color: #000;
 }
+
+@keyframes fadein {
+  /* 0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(720deg);
+  } */
+  from {opacity: 0;}
+   to {opacity: 1;}
+
+   10%, 90% {
+  transform: translate3d(0, -1px, 0);
+}
+
+/* 20%, 80% {
+  transform: translate3d(2px, 0, 0);
+}
+
+30%, 50%, 70% {
+  transform: translate3d(-4px, 0, 0);
+} */
+
+40%, 60% {
+  transform: translate3d(0, 4px, 0);
+}
+}
+
+
+/* #calendar{
+  text-align: center;
+    background-color: red;
+} */

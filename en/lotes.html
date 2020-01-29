@@ -92,8 +92,7 @@
                                   </li>
                                   <li><a href="./apartamentos.html">Apartamentos</a></li>
                                   <li class="active"><a href="./lotes.html">Lotes</a></li>
-                                  <li><a href="#">Fiestas</a></li>
-                                  <!-- <li><a href="#">Contacto</a></li> -->
+                                  <li><a href="./fiestas.html">Fiestas</a></li>
                               </ul>
                             </div>
                             <!-- Nav End -->
@@ -128,21 +127,42 @@
                     <!-- Single Room Details Area -->
                     <div class="single-room-details-area mb-50">
                         <!-- Room Thumbnail Slides -->
-                        <h6 class="demo" id="demo"></h6>
-                        <p id="parrafo"></p>
 
-                        <br>
+
+                        <!-- <h6 class="demo" id="demo"></h6> -->
+                        <!-- <p id="parrafo"></p>
+
+                        <br> -->
                         <div style="width:100%;">
-          <img onmousemove="showCoords(event)"  id="img_ID" src="../img/lote1.jpg" usemap="#map" border="0" width="100%" alt="" />
+                          <div id="popup">
+                            <h6 id="titulo"></h6>
+                            <a href="lotes.html"><img src="../img/apartamentos/5.jpg" alt=""></a>
+
+                            <p id="parrafo"></p>
+                          </div>
+
+                          <div id="popup2">
+                            <h6 id="titulo2"></h6>
+                            <img src="../img/apartamentos/2.jpg" alt="">
+                            <p id="parrafo2"></p>
+                          </div>
+
+                          <div id="popup3">
+                            <h6 id="titulo3"></h6>
+                            <img src="../img/apartamentos/3.jpg" alt="">
+                            <p id="parrafo3"></p>
+                          </div>
+
+          <img onmousemove="showCoords(event)"  id="img_ID" src="../img/lote1.jpg" usemap="#map" border="0" width="100%" alt=""/>
           </div>
           <map id="map_ID" name="map">
           <!-- <area  onclick="lote1(event)" shape="rect" coords="20,35,10,45" href="javascript:;" alt="lote 2" title="Lote 1" /> -->
 
           <!-- <area onclick="lote2(event)" shape="poly" coords="48,10,40,10,40,20,48,20" href="javascript:;" alt="lote 1" title="Lote 2" /> -->
 
-          <area onclick="lote1(event)" shape="rect" coords="70,30,62,45" href="javascript:;" alt="lote 1" title="Lote 1" />
-          <area onclick="lote2(event)" shape="rect" coords="61,30,52,45" href="javascript:;" alt="lote 2" title="Lote 2" />
-          <area onclick="lote3(event)" shape="rect" coords="51,30,42,45" href="javascript:;" alt="lote 3" title="Lote 3" />
+          <area onclick="lote1(event)" shape="rect" coords="70,30,62,45" href="javascript:;" alt="lote 1" title="Arrecife"/>
+          <area onclick="lote2(event)" shape="rect" coords="61,30,52,45" href="javascript:;" alt="lote 2" title="Coral" />
+          <area onclick="lote3(event)" shape="rect" coords="51,30,42,45" href="javascript:;" alt="lote 3" title="Manglar" />
 
 
           <!-- <area onclick="lote4(event)" shape="rect" coords="120,50,89,68" href="javascript:;" alt="lote 4" title="Lote 4" /> -->
@@ -260,6 +280,12 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
     function showCoords(event) {
       var x = event.clientX;
       var y = event.clientY;
+      // if (y > 450){
+        document.getElementById("popup").style.display = 'none';
+        document.getElementById("popup2").style.display = 'none';
+        document.getElementById("popup3").style.display = 'none';
+      // }
+
       // if (x == 927 && y 385) {
       //         var coords = "lote1"
       //     }
@@ -303,23 +329,43 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
 
     <script>
     function lote1(event) {
-          document.getElementById("demo").innerHTML = "Arresife";
-          document.getElementById("parrafo").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+ document.getElementById("popup").style.display = 'block';
+ document.getElementById("popup").style.animation = "fadein 0.5s alternate 1";
+ document.getElementById("popup2").style.display = 'none';
+ document.getElementById("popup3").style.display = 'none';
+          document.getElementById("titulo").innerHTML = "Arresife";
+          document.getElementById("parrafo").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.";
+
     }
     function lote2(event) {
-          document.getElementById("demo").innerHTML = "Coral";
-                    document.getElementById("parrafo").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining PageMaker including versions of Lorem Ipsum.";
+      document.getElementById("popup2").style.display = 'block';
+      document.getElementById("popup2").style.animation = "fadein 0.5s alternate 1";
+      document.getElementById("popup").style.display = 'none';
+      document.getElementById("popup3").style.display = 'none';
+          document.getElementById("titulo2").innerHTML = "Coral";
+                    document.getElementById("parrafo2").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.";
     }
     function lote3(event) {
-          document.getElementById("demo").innerHTML = "Manglar";
-                    document.getElementById("parrafo").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with deskem Ipsum.";
-    }
-
-    function lote4(event) {
-          document.getElementById("demo").innerHTML = "Lote 4";
-                    document.getElementById("parrafo").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently  Ipsum.";
+      document.getElementById("popup3").style.display = 'block';
+      document.getElementById("popup3").style.animation = "fadein 0.5s alternate 1";
+      document.getElementById("popup").style.display = 'none';
+      document.getElementById("popup2").style.display = 'none';
+          document.getElementById("titulo3").innerHTML = "Manglar";
+                    document.getElementById("parrafo3").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.";
     }
     </script>
+
+    <script>
+
+    // // When the user clicks on div, open the popup
+    // function myFunction() {
+    //   var popup = document.getElementById("myPopup");
+    //   popup.classList.toggle("show");
+    // }
+
+
+    </script>
+
     <!-- **** All JS Files ***** -->
     <!-- jQuery 2.2.4 -->
     <script src="../js/jquery.min.js"></script>
@@ -331,6 +377,13 @@ Todos los Derechos Reservados grupo3i.com &copy;<script>document.write(new Date(
     <script src="../js/roberto.bundle.js"></script>
     <!-- Active -->
     <script src="../js/default-assets/active.js"></script>
+
+    <!-- <script src="../js/jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js"></script> -->
+
+    <script>
+    // $('img[usemap]').rwdImageMaps();
+
+    </script>
 
 </body>
 
