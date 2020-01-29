@@ -2894,4 +2894,59 @@ display: none;
 #parrafo1 {
     text-align: justify;
 }
-/*# sourceMappingURL=style.css.map */
+
+
+#popup {
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  display:none;
+  position:fixed;
+  top:30%;
+  right: 30%;
+  z-index:9999;
+}
+#popup p{
+  font-size: 10px;
+  color: #000;
+}
+
+#popup2 {
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  display:none;
+  position:fixed;
+  top:30%;
+  left: 25%;
+  z-index:9999;
+}
+#popup2 p{
+  font-size: 10px;
+  color: #000;
+}
+
+
+#popup3 {
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  display:none;
+  position:fixed;
+  top:30%;
+  left: 20%;
+  z-index:9999;
+}
+#popup3 p{
+  font-size: 10px;
+  color: #000;
+}
