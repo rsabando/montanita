@@ -2901,21 +2901,32 @@ display: none;
 
 
 #popup {
-  /* animation-name: fadein;
-animation-duration: 0.1s; */
+/* clip-path: polygon(29% 14%, 100% 14%, 100% 100%, 0 100%, 0 14%, 15% 14%, 9% 8%); */
   border-radius: 5px;
+  border-style: solid;
+ border-width: 1px;
+ border-color: #92a8d1;
+
   margin: 20px;
   padding: 10px;
   text-align: center;
   width: 200px;
   background-color: #fff;
+  /* background-color: #38BFE0; */
   display:none;
   position:fixed;
-  /* top:30%;
-  right: 32%; */
   z-index:9999;
 }
+
+/* .cont{
+
+} */
+/* #popup h6 {
+   margin-top: 50px;
+} */
+
 #popup p{
+  margin-top: 9px;
   font-size: 10px;
   color: #000;
 }
@@ -2931,30 +2942,7 @@ animation-duration: 0.1s; */
   #popup h6{
     font-size: 10px;
   }
-/* ////////////// */
-  #popup2 {
-    width: 150px;
 
-  }
-  #popup2 p{
-    font-size: 7px;
-  }
-  #popup2 h6{
-    font-size: 10px;
-  }
-
-
-/* ////////////// */
-  #popup3 {
-    width: 150px;
-
-  }
-  #popup3 p{
-    font-size: 7px;
-  }
-  #popup3 h6{
-    font-size: 10px;
-  }
 
 }
 
