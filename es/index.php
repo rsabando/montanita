@@ -112,7 +112,7 @@
                                     <li><a href="./apartamentos.php">Apartamentos</a></li>
                                     <li><a href="./lotes.php">Lotes</a></li>
                                     <li><a href="./eventos.php">Eventos</a></li>
-                                    <li><a href="../admin/login.php">Admin</a></li>
+                                    <!-- <li><a href="../admin/login.php">Admin</a></li> -->
                                 </ul>
                             </div>
                             <!-- Nav End -->
