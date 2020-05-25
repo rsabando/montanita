@@ -1,18 +1,18 @@
 <?php
-include("../base/conexion.php");
-session_start();
-
-$sql = "SELECT * FROM bannerhome bannerhome WHERE nombre = 'reserva1'";
-$sql2 = "SELECT * FROM bannerhome WHERE nombre = 'reserva2'";
-$sql3 = "SELECT * FROM bannerhome WHERE nombre = 'reserva3'";
-
-$result=mysqli_query($db, $sql);
-$result2=mysqli_query($db, $sql2);
-$result3=mysqli_query($db, $sql3);
-
-$row = $result->fetch_assoc();
-$row2 = $result2->fetch_assoc();
-$row3 = $result3->fetch_assoc();
+// include("../base/conexion.php");
+// session_start();
+//
+// $sql = "SELECT * FROM bannerhome bannerhome WHERE nombre = 'reserva1'";
+// $sql2 = "SELECT * FROM bannerhome WHERE nombre = 'reserva2'";
+// $sql3 = "SELECT * FROM bannerhome WHERE nombre = 'reserva3'";
+//
+// $result=mysqli_query($db, $sql);
+// $result2=mysqli_query($db, $sql2);
+// $result3=mysqli_query($db, $sql3);
+//
+// $row = $result->fetch_assoc();
+// $row2 = $result2->fetch_assoc();
+// $row3 = $result3->fetch_assoc();
 //
 // echo "resultado: ".$row["url"];
 ?>
@@ -142,9 +142,9 @@ $row3 = $result3->fetch_assoc();
 
               <div class="gallery js-flickity"
                 data-flickity-options='{ "autoplay": true }'>
-                <div class="gallery-cell"><img src="<?php echo $row["url"]  ?>" alt></div>
-                <div class="gallery-cell"><img src="<?php echo $row2["url"]  ?>" alt></div>
-                <div class="gallery-cell"><img src="<?php echo $row3["url"]  ?>" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva1.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva2.png" alt></div>
+                <div class="gallery-cell"><img src="../img/banner/reserva3.png" alt></div>
               </div>
               <br>
                     <!-- <div class="hotel-search-form">
